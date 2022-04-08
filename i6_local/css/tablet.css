@@ -1,0 +1,180 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(fonts/Orbitron-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: mainAreaFont;
+  src: url(fonts/PermanentMarker-Regular.ttf);
+}
+
+body{
+  background: url(images/portfolioBG.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100%;
+  width:100%;
+}
+
+#banner h1{
+  font-family : myFirstFont;
+  color : black;
+  letter-spacing : 20px;
+  font-size: 30pt;
+}
+
+#mainArea {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainArea p{
+  font-family : mainAreaFont;
+  color : black;
+  letter-spacing : 20px;
+  font-size: 50pt;
+}
+
+nav{}
+
+nav ul{
+  list-style: none;
+  padding : 0px;
+  margin : 90px;
+  border : solid 0px green;
+  /* Flexbox */
+  display : flex;
+  flex-direction : row;
+}
+
+nav ul a{
+  flex-grow : 1;
+}
+
+nav ul a:link{
+  color : black;
+  font-weight : bold;
+  text-decoration : none;
+  text-transform: uppercase;
+  font-family : myFirstFont !important;
+}
+
+nav ul a:visited{
+    color : black;
+    text-decoration : none;
+}
+
+nav ul li{
+  border : solid 2px black;
+
+
+  text-align : center;
+  padding-top : 10px;
+  padding-bottom : 10px;
+
+  border-radius : 10px;
+}
+
+nav ul li:hover{
+  background : skyblue;
+}
+
+#lightbox{
+  background : rgba(0,0,0,.9);
+  width : 100vw;
+  height : 100vh;
+
+  position : fixed;
+  top : 0px;
+  left : 0px;
+  z-index: 10000;
+
+  display : none;
+  justify-content: center;
+  align-items: center;
+}
+
+#lighbox_content{
+  min-width : 250px;
+  width : 50vw;
+  min-height : 100px;
+  border : solid 1px black;
+
+  position : relative;
+
+  /* add curve to the corners */
+  border-radius : 10px;
+
+  background : white;
+}
+
+#lightbox_close_btn{
+  position : absolute;
+  right : 5px;
+  top : 5px;
+
+  border : solid 1px black;
+
+  width : 30px;
+  height : 30px;
+
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size : 14pt;
+  font-weight : bold;
+  font-family : sans-serif;
+
+  border-radius : 50%;
+
+  background : black;
+  color : white;
+
+  cursor : pointer;
+
+}
+
+#subArea{
+  margin-top : 10px;
+  max-width : 100%;
+  justify-content: center;
+  display : flex;
+
+}
+
+.thumb{
+  border : solid 1px white;
+  background: ivory;
+  flex-grow : 1;
+
+  margin : 10px;
+  width: 100%;
+  height:auto;
+
+  position : relative;
+  display: flex;
+  justify-content: center;
+
+  flex-wrap : wrap;
+
+}
+
+.thumbImg{
+  width: 100%;
+  height:auto;
+
+  position : relative;
+  display: flex;
+  justify-content: center;
+
+  flex-wrap : wrap;
+
+  cursor : pointer;
+}

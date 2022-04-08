@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title> Interest Website </title>
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+    <!-- Prevent smartphones from scaling pages down -->
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+
+    <script>
+      var soundID = "Thunder";
+
+      function loadSound () {
+        createjs.Sound.registerSound("audio/Game-Death.ogg", soundID);
+      }
+
+      function playSound () {
+        createjs.Sound.play(soundID);
+      }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload="loadSound();">
+    <div id="wrap">
+
+       <header>
+         <div id="title">HTML</div>
+         <nav>
+           <ul>
+             <a href="index.html"><li>Home</li></a>
+             <a href="../index.html"><li>Portfolio</li></a>
+           </ul>
+         </nav>
+       </header>
+
+       <nav>
+         <ul>
+           <a href="htm_l.html"><li>HTML</li></a>
+           <a href="python.html"><li>Python</li></a>
+           <a href="java.html"><li>Java</li></a>
+           <a href="C.html"><li>C</li></a>
+         </ul>
+       </nav>
+
+       <div id="mainArea">
+          <img src="images/html1.png" class="mainImg"/>
+
+       </div>
+
+       <div id="subPar">
+         <p>Click the images FYI!</p>
+
+       </div>
+
+       <div id="mainPar">
+         <div id="mainPar_changeStyle_btn1" onclick="playSound();">
+           Black & White
+         </div>
+         <div id="mainPar_changeStyle_btn2" onclick="playSound();">
+           Ivory & Black
+         </div>
+
+         <p>
+           About HTML <br>
+           <ul>
+            <li> HTML: Hypertext Markup Language </li><br>
+            <li>What is it used for?: </li><br>
+              <ul>
+                <li>"Allows the user to create and structure sections, paragraphs, headings, links, and blockquotes for web pages and applications." </li><br>
+              </ul>
+            <li>Advantages: </li><br>
+              <ul>
+                <li>"Straightforward and easy to learn even for complete beginners." </li><br>
+                <li>"Every browser supports HTML Language." </li>
+              </ul>
+            <li>Disadvantages: </li><br>
+              <ul>
+                <li>"HTML can create only static and plain pages so if we need dynamic pages then HTML is not useful." </li><br>
+                <li>"Security features are not good at HTML." </li>
+              </ul>
+            <li>History: </li><br>
+              <ul>
+                <li>"HTML was invented by Tim Berners-Lee, a physicist at the CERN research institute in Switzerland." </li><br>
+              </ul>
+            <li>For more information, click the images below!</li>
+           </ul>
+         </p>
+       </div>
+
+       <div id="subArea">
+         <div class="thumb">
+           <a href="https://en.wikipedia.org/wiki/HTML">
+             <img src="images/html.png" class="thumbImg"/>
+           </a>
+         </div>
+         <div class="thumb">
+           <a href="https://www.w3schools.com/html/">
+             <img src="images/w3schools.png" class="thumbImg">
+           </a>
+         </div>
+         <div class="thumb">
+           <a href="https://youtu.be/UB1O30fR-EE">
+            <img src="images/htmlVid.jpg" class="thumbImg">
+           </a>
+         </div>
+       </div>
+
+       <div id="subCaption">
+         <div class="caption">
+           HTML Wikipedia
+         </div>
+         <div class="caption">
+           HTML Tutorial
+         </div>
+         <div class="caption">
+           HTML Video
+         </div>
+       </div>
+
+       <div id="workCited">
+         <p>
+           Work Cited <br>
+           <ul>
+             <li>G., Domantas. “What Is HTML? The Basics of Hypertext Markup Language Explained.” Hostinger Tutorials, Hostinger, 25 Nov. 2019, www.hostinger.com/tutorials/what-is-html. </li>
+             <li>“Advantages and Disadvantages of HTML: What Are the Advantages of HTML?: What Are the Disadvantages of HTML?” Online Help, beingcomputeracy.blogspot.com/2018/09/advantages-and-disadvantages-of-html.html. </li>
+           </ul>
+         </p>
+       </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/retina.js"></script>
+
+  </body>
+</html>

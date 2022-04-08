@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title> Interest Website </title>
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+    <!-- Prevent smartphones from scaling pages down -->
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+
+    <script>
+      var soundID = "Thunder";
+
+      function loadSound () {
+        createjs.Sound.registerSound("audio/Game-Death.ogg", soundID);
+      }
+
+      function playSound () {
+        createjs.Sound.play(soundID);
+      }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload="loadSound();">
+    <div id="wrap">
+
+       <header>
+         <div id="title">HTML</div>
+         <nav>
+           <ul>
+             <a href="index.html"><li>Home</li></a>
+             <a href="../index.html"><li>Portfolio</li></a>
+           </ul>
+         </nav>
+       </header>
+
+       <nav>
+         <ul>
+           <a href="htm_l.html"><li>HTML</li></a>
+           <a href="python.html"><li>Python</li></a>
+           <a href="java.html"><li>Java</li></a>
+           <a href="C.html"><li>C</li></a>
+         </ul>
+       </nav>
+
+       <div id="mainArea">
+          <img src="images/cMain.png" class="mainImg"/>
+
+       </div>
+
+       <div id="subPar">
+         <p>Click the images FYI!</p>
+
+       </div>
+
+       <div id="mainPar">
+         <div id="mainPar_changeStyle_btn1" onclick="playSound();">
+           Black & White
+         </div>
+         <div id="mainPar_changeStyle_btn2" onclick="playSound();">
+           Ivory & Black
+         </div>
+
+         <p>
+           About C <br>
+           <ul>
+            <li> C: "General-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system." </li><br>
+            <li>What is it used for?: </li><br>
+              <ul>
+                <li>"C is a programming language that is both versatile and popular, allowing it to be used in a vast array of applications and technologies. It can, for example, be used to write the code for operating systems, much more complex programs and everything in between." </li><br>
+              </ul>
+            <li>Advantages: </li><br>
+              <ul>
+                <li>"C is very flexible, or we can say machine independent that helps you to run your code on any machine without making any change or just a few changes in the code." </li><br>
+                <li>"C is highly portable and is used for scripting system applications which form a major part of Windows, UNIX, and Linux operating system." </li>
+              </ul>
+            <li>Disadvantages: </li><br>
+              <ul>
+                <li>"In the C programming language, the errors or the bugs aren’t detected after each line of code. Instead, the compiler shows all the errors after writing the program. It makes the checking of code very complex in large programs." </li><br>
+                <li>"C is a small and core machine language that has minimum data hiding and exclusive visibility that affects the security of this language." </li>
+              </ul>
+            <li>History: </li><br>
+              <ul>
+                <li>"C was developed by Dennis Ritchie during the early 1970s while working at AT&T Bell Labs in the USA. The objective of its development was in the context of the re-design of the UNIX operating system to enable it to be used on multiple computers." </li><br>
+              </ul>
+            <li>For more information, click the images below!</li>
+           </ul>
+         </p>
+       </div>
+
+       <div id="subArea">
+         <div class="thumb">
+           <a href="https://en.wikipedia.org/wiki/C_(programming_language)">
+             <img src="images/c.png" class="thumbImg"/>
+           </a>
+         </div>
+         <div class="thumb">
+           <a href="https://www.w3schools.in/c-tutorial/">
+             <img src="images/w3schools.png" class="thumbImg">
+           </a>
+         </div>
+         <div class="thumb">
+           <a href="https://youtu.be/KJgsSFOSQv0">
+            <img src="images/cVid.jpg" class="thumbImg">
+           </a>
+         </div>
+       </div>
+
+       <div id="subCaption">
+         <div class="caption">
+           C Wikipedia
+         </div>
+         <div class="caption">
+           C Tutorial
+         </div>
+         <div class="caption">
+           C Video
+         </div>
+       </div>
+
+       <div id="workCited">
+         <p>
+           Work Cited <br>
+           <ul>
+             <li>Bansal, Shubham. “Benefits of C Language over Other Programming Languages.” GeeksforGeeks, GeeksforGeeks, 1 Apr. 2019, www.geeksforgeeks.org/benefits-c-language-programming-languages/.  </li>
+             <li>“A Guide to C Programming: Definition, Uses and Benefits.” Indeed Career Guide, 26 Feb. 2020, www.indeed.com/career-advice/career-development/c-programming.  </li>
+             <li>“Advantages and Disadvantages of C Programming - Discover the Secrets of C.” DataFlair, DataFlair, 4 July 2019, data-flair.training/blogs/advantages-and-disadvantages-of-c/.  </li>
+           </ul>
+         </p>
+       </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/retina.js"></script>
+
+  </body>
+</html>

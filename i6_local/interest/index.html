@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Interest Website </title>
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+    <!-- Prevent smartphones from scaling pages down -->
+
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+
+    <script>
+      var soundID = "Thunder";
+
+      function loadSound () {
+        createjs.Sound.registerSound("audio/Game-Death.ogg", soundID);
+      }
+
+      function playSound () {
+        createjs.Sound.play(soundID);
+      }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <style>
+      #mainPar{
+        display: flex;
+      }
+
+      #subPar{
+        display: none;
+      }
+
+      p{
+        text-align: center;
+        font-size: 25pt;
+      }
+    </style>
+
+    <meta name="viewport" content="initial-scale=1">
+
+  </head>
+
+  <body onload="loadSound();">
+
+    <div id="lightbox">
+       <div id="lighbox_content">
+           <div id="lightbox_close_btn" onclick="playSound();">
+             x
+           </div>
+           <div id="lightbox_mainArea">
+
+           </div>
+       </div>
+    </div>
+
+     <div id="wrap">
+
+        <header>
+          <div id="title">Interest Website</div>
+          <nav>
+            <ul>
+              <a href="index.html"><li>Home</li></a>
+              <a href="../index.html"><li>Portfolio</li></a>
+            </ul>
+          </nav>
+        </header>
+
+        <nav>
+          <ul>
+            <a href="htm_l.html"><li>HTML</li></a>
+            <a href="python.html"><li>Python</li></a>
+            <a href="java.html"><li>Java</li></a>
+            <a href="C.html"><li>C</li></a>
+          </ul>
+        </nav>
+
+        <div id="mainArea">
+           <img src="images/csMainPic.jpg" class="mainImg"/>
+
+        </div>
+
+        <div id="subPar">
+          <p>Click the images FYI!</p>
+
+        </div>
+
+        <div id="mainPar">
+
+          <div id="mainPar_changeStyle_btn1" onclick="playSound();">
+            Black & White
+          </div>
+          <div id="mainPar_changeStyle_btn2" onclick="playSound();">
+            Ivory & Black
+          </div>
+
+          <p>
+            In my interest website, I would like to introduce various programming languages!
+          </p>
+        </div>
+
+        <div id="subArea">
+          <div class="thumb">
+            <img src="images/html.png" class="thumbImg"/>
+          </div>
+          <div class="thumb">
+            <img src="images/python.png" class="thumbImg"/>
+          </div>
+          <div class="thumb">
+            <img src="images/java.svg" class="thumbImg"/>
+          </div>
+          <div class="thumb">
+            <img src="images/c.png" class="thumbImg"/>
+          </div>
+        </div>
+
+        <div id="subCaption">
+          <div class="caption">
+            HTML
+          </div>
+          <div class="caption">
+            Python
+          </div>
+          <div class="caption">
+            Java
+          </div>
+          <div class="caption">
+            C
+          </div>
+        </div>
+
+     </div>
+
+     <script type="text/javascript" src="js/retina.js"></script>
+
+  </body>
+
+</html>

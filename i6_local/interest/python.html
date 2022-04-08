@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title> Interest Website </title>
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+    <!-- Prevent smartphones from scaling pages down -->
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+
+    <script>
+      var soundID = "Thunder";
+
+      function loadSound () {
+        createjs.Sound.registerSound("audio/Game-Death.ogg", soundID);
+      }
+
+      function playSound () {
+        createjs.Sound.play(soundID);
+      }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload="loadSound();">
+    <div id="wrap">
+
+       <header>
+         <div id="title">HTML</div>
+         <nav>
+           <ul>
+             <a href="index.html"><li>Home</li></a>
+             <a href="../index.html"><li>Portfolio</li></a>
+           </ul>
+         </nav>
+       </header>
+
+       <nav>
+         <ul>
+           <a href="htm_l.html"><li>HTML</li></a>
+           <a href="python.html"><li>Python</li></a>
+           <a href="java.html"><li>Java</li></a>
+           <a href="C.html"><li>C</li></a>
+         </ul>
+       </nav>
+
+       <div id="mainArea">
+          <img src="images/pythonMain.jpg" class="mainImg"/>
+
+       </div>
+
+       <div id="subPar">
+         <p>Click the images FYI!</p>
+
+       </div>
+
+       <div id="mainPar">
+         <div id="mainPar_changeStyle_btn1" onclick="playSound();">
+           Black & White
+         </div>
+         <div id="mainPar_changeStyle_btn2" onclick="playSound();">
+           Ivory & Black
+         </div>
+
+         <p>
+           About Python <br>
+           <ul>
+            <li> Python: "Interpreted, high-level and general-purpose programming language." </li><br>
+            <li>What is it used for?: </li><br>
+              <ul>
+                <li>"Python is often used as a support language for software developers, for build control and management, testing, and in many other ways." </li><br>
+              </ul>
+            <li>Advantages: </li><br>
+              <ul>
+                <li>"Python is a high-level programming language that has English-like syntax. This makes it easier to read and understand the code." </li><br>
+                <li>"Python is an interpreted language which means that Python directly executes the code line by line. In case of any error, it stops further execution and reports back the error which has occurred." </li>
+              </ul>
+            <li>Disadvantages: </li><br>
+              <ul>
+                <li>"Slow Speed" </li><br>
+                <li>"The Python’s database access layer is primitive and underdeveloped in comparison to the popular technologies like JDBC and ODBC." </li>
+              </ul>
+            <li>History: </li><br>
+              <ul>
+                <li>"Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC language (itself inspired by SETL), capable of exception handling and interfacing with the Amoeba operating system." </li><br>
+              </ul>
+            <li>For more information, click the images below!</li>
+           </ul>
+         </p>
+       </div>
+
+       <div id="subArea">
+         <div class="thumb">
+           <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">
+             <img src="images/python.png" class="thumbImg"/>
+           </a>
+         </div>
+         <div class="thumb">
+           <a href="https://www.w3schools.com/python/">
+             <img src="images/w3schools.png" class="thumbImg">
+           </a>
+         </div>
+         <div class="thumb">
+           <a href="https://youtu.be/rfscVS0vtbw">
+            <img src="images/pythonVid.jpg" class="thumbImg">
+           </a>
+         </div>
+       </div>
+
+       <div id="subCaption">
+         <div class="caption">
+           Python Wikipedia
+         </div>
+         <div class="caption">
+           Python Tutorial
+         </div>
+         <div class="caption">
+           Python Video
+         </div>
+       </div>
+
+       <div id="workCited">
+         <p>
+           Work Cited <br>
+           <ul>
+             <li>“Python (Programming Language).” Wikipedia, Wikimedia Foundation, 16 Nov. 2020, en.wikipedia.org/wiki/Python_(programming_language).  </li>
+             <li>“Applications for Python.” Python.org, www.python.org/about/apps/.  </li>
+             <li>Kumar, Chhavi. “Python Advantages and Disadvantages - Step in the Right Direction.” TechVidvan, 11 Dec. 2019, techvidvan.com/tutorials/python-advantages-and-disadvantages/. </li>
+           </ul>
+         </p>
+       </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/retina.js"></script>
+
+  </body>
+</html>

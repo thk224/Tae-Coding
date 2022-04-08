@@ -1,0 +1,293 @@
+@font-face {
+  font-family: titleFont;
+  src: url(../fonts/Modak-Regular.ttf);
+}
+
+@font-face {
+  font-family: linkFont;
+  src: url(../fonts/Grandstander-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: parFont;
+  src: url(../fonts/Cuprum-VariableFont_wght.ttf);
+}
+
+body{
+  background: url(../images/background1.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#wrap{
+
+  max-width: 100vw;
+}
+
+header{
+
+  display : flex;
+
+  padding : 20px;
+}
+
+#title{
+  padding : 0px;
+  margin : 0px;
+  text-align : center;
+  font-family: titleFont;
+  font-size: 70px;
+  color: ivory;
+
+  flex-grow : 1;
+}
+
+nav{
+
+  flex-grow : 1;
+}
+
+nav ul{
+  padding : 0px;
+  margin : 20px;
+  margin-top : 10px;
+  list-style : none;
+
+  display : flex;
+}
+
+nav ul a{
+  flex-grow: 1;
+}
+
+nav ul a:link{
+  color : white;
+  font-weight : bold;
+  text-decoration : none;
+  font-family : linkFont !important;
+}
+
+nav ul a:visited{
+    color : #FFF;
+    text-decoration : none;
+}
+
+nav ul li{
+  border : solid 2px white;
+  text-align : center;
+  flex-grow : 1;
+  padding-top : 10px;
+  padding-bottom : 10px;
+}
+
+nav ul li:hover{
+  background : skyblue;
+}
+
+#mainArea{
+
+  min-height: 300px;
+  max-height: 500px;
+  margin-top : 10px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.mainImg{
+  min-height: 300px;
+  max-height: 500px;
+  width: auto;
+
+  cursor : pointer;
+}
+
+#subPar{
+  color: black;
+  margin-top : 20px;
+  display: flex;
+  justify-content: center;
+  font-family: parFont;
+  font-size: 20px;
+
+  background: ivory;
+}
+
+#mainPar{
+  color: black;
+  margin-top : 20px;
+  display: none;
+  justify-content: center;
+  font-family: parFont;
+  font-size: 20px;
+
+  background: ivory;
+}
+
+#workCited{
+  color: white;
+  margin-top : 20px;
+  display: flex;
+  font-family: parFont;
+  font-size: 15px;
+}
+
+#subArea{
+  margin-top : 10px;
+  display : flex;
+
+  justify-content: center;
+}
+
+#subCaption{
+  color: white;
+  margin-top : 0px;
+  display : flex;
+}
+
+.thumb{
+  border : solid 1px white;
+  background: ivory;
+  flex-grow : 1;
+
+  margin : 10px;
+  min-height : 250px;
+  max-height : 250px;
+  max-width : 33%;
+
+  position : relative;
+  display: flex;
+  justify-content: center;
+}
+
+.thumbImg{
+  min-height : 250px;
+  max-height : 250px;
+  width: auto;
+
+  cursor : pointer;
+}
+
+.caption{
+  text-align : center;
+  font-family: linkFont;
+  font-size: 20px;
+
+  flex-grow : 1;
+
+  margin : 10px;
+
+  max-height : 250px;
+}
+
+#lightbox{
+  background : rgba(0,0,0,.9);
+  width : 100vw;
+  height : 100vh;
+
+  position : fixed;
+  top : 0px;
+  left : 0px;
+  z-index: 10000;
+
+  display : none;
+  justify-content: center;
+  align-items: center;
+}
+
+#lighbox_content{
+  min-width : 500px;
+  width : 50vw;
+  min-height : 300px;
+  border : solid 1px black;
+
+  position : relative;
+
+  /* add curve to the corners */
+  border-radius : 10px;
+
+  background : white;
+}
+
+#lightbox_close_btn{
+  position : absolute;
+  right : 5px;
+  top : 5px;
+
+  border : solid 1px black;
+
+  width : 30px;
+  height : 30px;
+
+  display : flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size : 14pt;
+  font-weight : bold;
+  font-family : sans-serif;
+
+  border-radius : 50%;
+
+  background : black;
+  color : white;
+
+  cursor : pointer;
+
+}
+
+#mainPar_changeStyle_btn1{
+  position: relative;
+  right : 8px;
+  top : 8px;
+
+  border : solid 1px black;
+
+  width : 60px;
+  height : 60px;
+
+  display : flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size : 10pt;
+  font-weight : bold;
+  font-family : sans-serif;
+
+  border-radius : 80%;
+
+  background : black;
+  color : white;
+
+  cursor : pointer;
+
+}
+
+#mainPar_changeStyle_btn2{
+  position: relative;
+  right : 8px;
+  top : 8px;
+
+  border : solid 1px ivory;
+
+  width : 60px;
+  height : 60px;
+
+  display : none;
+  justify-content: center;
+  align-items: center;
+
+  font-size : 10pt;
+  font-weight : bold;
+  font-family : sans-serif;
+
+  border-radius : 80%;
+
+  background : ivory;
+  color : black;
+
+  cursor : pointer;
+
+}

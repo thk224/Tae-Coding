@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title> Interest Website </title>
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+    <!-- Prevent smartphones from scaling pages down -->
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+
+    <script>
+      var soundID = "Thunder";
+
+      function loadSound () {
+        createjs.Sound.registerSound("audio/Game-Death.ogg", soundID);
+      }
+
+      function playSound () {
+        createjs.Sound.play(soundID);
+      }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload="loadSound();">
+    <div id="wrap">
+
+       <header>
+         <div id="title">HTML</div>
+         <nav>
+           <ul>
+             <a href="index.html"><li>Home</li></a>
+             <a href="../index.html"><li>Portfolio</li></a>
+           </ul>
+         </nav>
+       </header>
+
+       <nav>
+         <ul>
+           <a href="htm_l.html"><li>HTML</li></a>
+           <a href="python.html"><li>Python</li></a>
+           <a href="java.html"><li>Java</li></a>
+           <a href="C.html"><li>C</li></a>
+         </ul>
+       </nav>
+
+       <div id="mainArea">
+          <img src="images/javaMain.webp" class="mainImg"/>
+
+       </div>
+
+       <div id="subPar">
+         <p>Click the images FYI!</p>
+
+       </div>
+
+       <div id="mainPar">
+         <div id="mainPar_changeStyle_btn1" onclick="playSound();">
+           Black & White
+         </div>
+         <div id="mainPar_changeStyle_btn2" onclick="playSound();">
+           Ivory & Black
+         </div>
+
+         <p>
+           About Java <br>
+           <ul>
+            <li> Java: "Class-based, object-oriented programming language" </li><br>
+            <li>What is it used for?: </li><br>
+              <ul>
+                <li>"Java can be used to create complete applications that may run on a single computer or be distributed among servers and clients in a network. It can also be used to build a small application module or applet (a simply designed, small application) for use as part of a Web page. Applets make it possible for a Web page user to interact with the page." </li><br>
+              </ul>
+            <li>Advantages: </li><br>
+              <ul>
+                <li>"Java code runs on any machine that doesn’t need any special software to be installed, but the JVM needs to be present on the machine." </li><br>
+                <li>"It permits you to form standard programs and reusable code." </li>
+              </ul>
+            <li>Disadvantages: </li><br>
+              <ul>
+                <li>"Java is memory-consuming and significantly slower than natively compiled languages such as C or C++." </li><br>
+                <li>"The default look of GUI applications written in Java using the Swing toolkit is very different from native applications." </li>
+              </ul>
+            <li>History: </li><br>
+              <ul>
+                <li>"James Gosling, Mike Sheridan, and Patrick Naughton initiated the Java language project in June 1991." </li><br>
+              </ul>
+            <li>For more information, click the images below!</li>
+           </ul>
+         </p>
+       </div>
+
+       <div id="subArea">
+         <div class="thumb">
+           <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">
+             <img src="images/java.svg" class="thumbImg"/>
+           </a>
+         </div>
+         <div class="thumb">
+           <a href="https://www.w3schools.com/java/">
+             <img src="images/w3schools.png" class="thumbImg">
+           </a>
+         </div>
+         <div class="thumb">
+           <a href="https://youtu.be/eIrMbAQSU34">
+            <img src="images/javaVid.jpg" class="thumbImg">
+           </a>
+         </div>
+       </div>
+
+       <div id="subCaption">
+         <div class="caption">
+           Java Wikipedia
+         </div>
+         <div class="caption">
+           Java Tutorial
+         </div>
+         <div class="caption">
+           Java Video
+         </div>
+       </div>
+
+       <div id="workCited">
+         <p>
+           Work Cited <br>
+           <ul>
+             <li>“Java (Programming Language).” Wikipedia, Wikimedia Foundation, 27 Oct. 2020, en.wikipedia.org/wiki/Java_(programming_language).  </li>
+             <li>“Pros and Cons of Java: Advantages and Disadvantages of Java.” DataFlair, 29 July 2019, data-flair.training/blogs/pros-and-cons-of-java/.  </li>
+             <li>“What Is Java and Why Is It Important?” Code Institute, 12 June 2019, codeinstitute.net/blog/what-is-java/.  </li>
+           </ul>
+         </p>
+       </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/retina.js"></script>
+
+  </body>
+</html>

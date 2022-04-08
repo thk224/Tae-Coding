@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+  <!-- Media query for medium browser width -->
+  <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="css/tablet.css">
+  <!-- Media query for full browser width -->
+  <link rel="stylesheet" media="only screen and (min-width: 961px)" href="css/desktop.css">
+  <!-- Prevent smartphones from scaling pages down -->
+
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+
+  <script>
+    var soundID = "Thunder";
+
+    function loadSound () {
+      createjs.Sound.registerSound("interest/audio/Game-Death.ogg", soundID);
+    }
+
+    function playSound () {
+      createjs.Sound.play(soundID);
+    }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/custom.js"></script>
+  <style>
+    p{
+      font-size: 30pt;
+      color: tomato;
+    }
+  </style>
+  <title>Tae's Website</title>
+</head>
+ <body onload="loadSound();">
+
+   <div id="lightbox">
+      <div id="lighbox_content">
+          <div id="lightbox_close_btn" onclick="playSound();">
+            x
+          </div>
+          <div id="lightbox_mainArea">
+
+          </div>
+      </div>
+   </div>
+
+   <div id="wrap">
+
+       <div id="banner">
+           <h1> Portfolio Home Page </h1>
+       </div>
+       <section>
+         <p>
+           Welcome to Tae's Portfolio!
+         </p>
+       </section>
+       <nav>
+
+         <ul>
+           <a href="personal/index.html"><li>Personal Website</li></a>
+           <a href="interest/index.html"><li>Interest Website</li></a>
+           <a href="cause/index.html"><li>Cause Website</li></a>
+         </ul>
+
+       </nav>
+    </div>
+
+    <div id="mainArea">
+      <p>
+        I am a </br> Web Designer.
+      </p>
+    </div>
+
+    <div id="subArea">
+      <div id="personalPreview" class="thumb">
+        <img src="css/images/personalPreview.png" class="thumbImg"/>
+      </div>
+      <div id="interestPreview" class="thumb">
+        <img src="css/images/interestPreview.png" class="thumbImg"/>
+      </div>
+      <div id="causePreview" class="thumb">
+        <img src="css/images/causePreview.png" class="thumbImg"/>
+      </div>
+    </div>
+
+ </body>
+</html>
